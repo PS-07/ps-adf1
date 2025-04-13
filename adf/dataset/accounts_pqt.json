@@ -1,0 +1,20 @@
+{
+	"name": "accounts_pqt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls_lks1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "pqt",
+				"fileSystem": "test"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
