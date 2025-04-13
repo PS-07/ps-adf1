@@ -1,0 +1,9 @@
+{
+	"name": "ps-adf1",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cac5a7d8-1d22-4652-a8fa-b0c3f355bf82",
+		"tenantId": "cbecbfe7-0d34-458b-ab67-f111e927329d"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"name": "sfv2_lks1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "SalesforceV2",
+		"typeProperties": {
+			"environmentUrl": {
+				"type": "AzureKeyVaultSecret",
+				"secretName": "sf-url",
+				"store": {
+					"referenceName": "akv1",
+					"type": "LinkedServiceReference"
+				}
+			},
+			"authenticationType": "OAuth2ClientCredentials",
+			"clientId": {
+				"type": "AzureKeyVaultSecret",
+				"secretName": "sf-oauth-key",
+				"store": {
+					"referenceName": "akv1",
+					"type": "LinkedServiceReference"
+				}
+			},
+			"clientSecret": {
+				"type": "AzureKeyVaultSecret",
+				"secretName": "sf-oauth-secret",
+				"store": {
+					"referenceName": "akv1",
+					"type": "LinkedServiceReference"
+				}
+			},
+			"apiVersion": "54.0"
+		},
+		"annotations": []
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "sfobj_account",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sfv2_lks1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SalesforceV2Object",
+		"schema": [],
+		"typeProperties": {
+			"objectApiName": "Account"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
